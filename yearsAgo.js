@@ -1,6 +1,6 @@
-function getDay(item) {
-  var date = new Date(item);
-  var weekDays = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']
-  var x = date.getDay()
-  return weekDays[x]
-  }
+function yearsAgo(item){
+  var date = new Date
+  console.log(item)
+  var years = date.getFullYear()
+  return (years - item)
+}  

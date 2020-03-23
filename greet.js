@@ -1,3 +1,3 @@
-function greet(name){
-  return "Hello, " + name
+function greet(Name){
+  return "Hello, " + Name
 };

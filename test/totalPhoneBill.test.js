@@ -1,8 +1,11 @@
-describe('this test' , function(){
-    it('should show you how to use MochaJS' , function(){
-        assert.equal(2,2);
-
-        assert.deepEqual([2,2],[2,2]);
+describe("The totalPhoneBill function" , function(){
+    it("should have sms bill" , function(){
+        assert.equal("R0.65", totalPhoneBill("sms"));
+    });
+    it("should have call bill" , function(){
+        assert.equal("R2.75", totalPhoneBill("call"));
     });
 
 });
+
+

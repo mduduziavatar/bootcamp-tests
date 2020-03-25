@@ -1,8 +1,10 @@
-describe('this test' , function(){
-    it('should show you how to use MochaJS' , function(){
-        assert.equal(2,2);
+describe("The isFromBellville function", function(){
+    it("should return true for CY", function(){
+        assert.equal(true, isFromBellville("CY"));
+    });
 
-        assert.deepEqual([2,2],[2,2]);
+    it("should return false for CJ", function(){
+        assert.equal(false, isFromBellville("CJ"));
     });
 
 });

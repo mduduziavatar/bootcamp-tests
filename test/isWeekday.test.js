@@ -1,8 +1,14 @@
-describe('this test' , function(){
-    it('should show you how to use MochaJS' , function(){
-        assert.equal(2,2);
+describe("The isWeekday function ", function () {
 
-        assert.deepEqual([2,2],[2,2]);
+    it("should say that Monday is a weekday", function () {
+        assert.equal(true, isWeekday('M'));
+    });
+    it("should say that Sunday is not weekday", function () {
+
+        assert.equal(false, isWeekday('S'));
+    });
+    it("should say that Friday is a weekday", function () {
+        assert.equal(false, isWeekday('F'));
     });
 
 });

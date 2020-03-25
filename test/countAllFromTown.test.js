@@ -1,8 +1,9 @@
-describe('this test' , function(){
-    it('should show you how to use MochaJS' , function(){
-        assert.equal(2,2);
-
-        assert.deepEqual([2,2],[2,2]);
+describe("The countAllFromTown function" , function(){
+    it("should return all for Stellenbosh CL" , function(){
+        assert.equal(0, countAllFromTown("CL"));
     });
-
+    it("should return all for Paarl CJ" , function(){
+    assert.equal(0, countAllFromTown("CJ"));
+    });
+    
 });
